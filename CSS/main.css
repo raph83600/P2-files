@@ -1,0 +1,751 @@
+@font-face {
+    font-family: 'Ralewayregular';
+    src: url('/Ralewayregular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Ralewaymedium';
+    src: url('/Ralewaymedium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Ralewaybold';
+    src: url('/Ralewaybold.ttf') format('truetype');
+}
+
+header {
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.logo {
+    margin-top: 20%;
+}
+
+.logo img {
+    width: 100px;
+    height: 50px;
+}
+
+.menu_top {
+    font-family: Ralewayregular, sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 100%;
+    font-weight: 500;
+    height: 80px;
+    width: 100%;
+}
+
+.menu {
+    font-family: Ralewayregular, sans-serif;
+    color: #000;
+    border-top: 2px solid white;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 111px;
+    height: 80px;
+}
+
+/* souligner au survol */
+.menu:hover {
+    border-top: 2px solid blue;
+    color: #0065FC;
+}
+
+.title {
+    margin-top: 0%;
+    margin-bottom: 2%;
+}
+
+#recherche {
+    font-family: Ralewayregular;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: Ralewaybold;
+    font-size: 20px;
+}
+
+.hebergement_title {
+    display: flex;
+    margin-left: 7%;
+    margin-top: 3.5%;
+    margin-right: 10%;
+}
+
+.marseille_title {
+    margin-left: 1.5%;
+}
+
+main {
+    display: block;
+    margin: auto;
+    max-width: 1440px;
+}
+
+.searchbar {
+    display: flex;
+    margin-bottom: 1%;
+}
+
+.btn-glass {
+    visibility: hidden;
+}
+
+.btn_search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0065FC;
+    color: #fff;
+    border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
+    font-weight: 700;
+    width: 130px;
+    height: 50px;
+    border: solid #F2F2F2 1px;
+}
+
+.pointer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: solid #F2F2F2 1px;
+    border-right: none;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #F2F2F2;
+}
+
+.rsearch_bar {
+    display: flex;
+    border: none;
+}
+
+.info {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.info_img {
+    margin-right: 1%;
+    margin-top: 0.5%;
+}
+
+.info_img i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #F2F2F2;
+    color: #0065FC;
+}
+
+.titlefiltre {
+    display: flex;
+}
+
+.filtre {
+    display: flex;
+    margin-top: 1%;
+    align-items: center;
+    font-family: Ralewaymedium;
+    font-weight: 700;
+}
+
+.conteneur_nav {
+    display: flex;
+    list-style: none;
+    font-family: Ralewaymedium;
+    font-weight: 700;
+}
+
+.filtre_nav span {
+    color: #000;
+}
+
+.filtre_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    border: solid #F2F2F2 1px;
+    border-left: none;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.filter_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #DEEBFF;
+    color: #0065FC;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.filtre_nav span {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#logements {
+    display: flex;
+    margin-top: 2%;
+}
+
+.art_logement {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.locationcard_img img {
+    display: flex;
+    width: 100%;
+    height: 90px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+
+.location_card {
+    width: 30%;
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: black 20px 20px 20px -20px;
+    margin-bottom: 15px;
+}
+
+.locationcard_body {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+
+}
+
+.location_card a {
+    text-decoration: none;
+}
+
+.locationcard_menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.locationcard_title {
+    font-family: Ralewaybold;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 2%;
+}
+
+.locationcard_prix {
+    color: #000;
+    font-family: Ralewayregular;
+    font-size: 14px;
+}
+
+.locationcard_star {
+    display: flex;
+    font-size: 13px;
+    color: #0065FC;
+    margin-left: 5px;
+    padding-top: 5%;
+}
+
+.locationcard_star i {
+    margin-right: 4px;
+}
+
+.afficherplus {
+    font-family: Ralewaybold;
+    margin-left: 7%;
+    margin-top: 2%;
+    font-weight: 700;
+}
+
+.afficherplus a {
+    color: #000;
+    text-decoration: none;
+    font-family: Ralewaybold;
+}
+
+.populaire {
+    background-color: #F2F2F2;
+    margin-left: 2%;
+    width: 50%;
+    border-radius: 15px;
+    flex-direction: column;
+}
+
+.populaire_title {
+    display: flex;
+    font-size: 10px;
+    justify-content: space-between;
+    margin-right: 10%;
+    margin-top: 7%;
+    margin-left: 7%;
+}
+
+.populaire_title i {
+    display: flex;
+    align-items: center;
+    font-size: 200%;
+}
+
+.popularcard_menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 7%;
+}
+
+.popularcard a {
+    display: flex;
+    text-decoration: none;
+}
+
+.popularcard {
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    width: 90%;
+    height: 140px;
+    margin-top: 5%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: black 20px 20px 20px -20px;
+}
+
+.popularcard_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+    width: 50%;
+}
+
+.popularcard_img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px 15px 15px 15px;
+    object-fit: cover;
+}
+
+.popularcard_img {
+    width: 130px;
+    height: 140px;
+    min-width: 130px;
+    min-height: 140px;
+    margin-right: 10px;
+}
+
+.popularcard_title {
+    width: 80%;
+    color: #000;
+    font-family: Ralewaybold;
+    margin-top: 5%;
+}
+
+.popularcard_prix {
+    color: #000;
+    font-family: Ralewayregular;
+    margin-bottom: 2%;
+}
+
+.popularcard_star {
+    display: flex;
+    color: #0065FC;
+    font-size: 13px;
+    margin-bottom: 5%;
+}
+
+.popularcard_star_mid {
+    display: flex;
+    color: #0065FC;
+    font-size: 13px;
+    margin-bottom: 5%;
+}
+
+.greystar {
+    color: #F2F2F2;
+}
+
+.popularcard_star i {
+    margin-right: 2%;
+    margin-top: 10%;
+
+}
+
+.popularcard_star_mid i {
+    margin-right: 2%;
+    margin-top: 5%;
+}
+
+#activité {
+    display: flex;
+    margin-top: 3%;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.activité_card {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    flex-direction: row;
+}
+
+.activité_largecard_body {
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.20) 20px 20px 20px -20px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.activité_largecard_img {
+    display: flex;
+    width: 100%;
+}
+
+.activité_largecard_img img {
+    object-fit: cover;
+    width: 320px;
+    height: 475px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.activité_smallcard_body {
+    display: flex;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.20) 20px 20px 20px -20px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.activité_smallcard_img img {
+    object-fit: cover;
+    width: 320px;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.activité_smallcard_img .pomegues_img {
+    height: 250px;
+}
+
+.activité_smallcard_img .frioul_img {
+    height: 100px;
+}
+
+.activité_smallcard_img .lagarde_img {
+    height: 150px;
+}
+
+.activité_smallcard_img .longchamp_img {
+    height: 200px;
+}
+
+.activité_smallcard_title {
+    font-family: Ralewaybold;
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 5%;
+}
+
+.activité_largecard_title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 5%;
+    font-family: Ralewaybold;
+    color: #000;
+}
+
+.activité_smallbox {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.activité_card a {
+    text-decoration: none;
+}
+
+footer {
+    background: #F2F2F2;
+    height: 200px;
+}
+
+.footer ul {
+    display: flex;
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.footer_global {
+    width: 80%;
+    justify-content: space-around;
+}
+
+.footer_list {
+    padding-left: 5%;
+    margin-left: 10%;
+}
+
+.footer li {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 15px;
+    color: #000;
+    font-family: Ralewaymedium;
+}
+
+.footer li ul {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    color: #000;
+}
+
+footer a {
+    color: #000;
+    text-decoration: none;
+}
+
+@media (max-width: 1300px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 100%;
+        height: 80px;
+        margin-bottom: 5%;
+    }
+
+    h1 {
+        margin-top: 7%;
+        margin-left: 10%;
+    }
+
+    .menu:hover {
+        border-bottom: 2px solid blue;
+        color: #0065FC;
+        border-top: none;
+    }
+
+    .menu_top {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .menu {
+        width: 100%;
+        border-bottom: #F2F2F2 solid;
+    }
+
+
+nav {
+    justify-content: center;
+
+}
+
+.title {
+    margin-left: 10%;
+    margin-bottom: 5%;
+
+}
+
+.btn-glass {
+    display: flex;
+    padding: 0%;
+    border: none;
+    background-color: white;
+}
+
+.search_btn-glass {
+    display: flex !important;
+    visibility: visible;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    background: #0065FC;
+    border-radius: 15px 15px 15px 15px;
+    color: #fff;
+}
+
+.btn_search {
+    display: none;
+}
+
+.filtre {
+    flex-wrap: wrap;
+}
+
+.filtre_text {
+    margin-left: 10%;
+}
+
+.titlefiltre {
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.conteneur_nav li {
+    margin-bottom: 3%;
+}
+
+.conteneur_nav {
+    flex-wrap: wrap;
+    margin: 0%;
+}
+
+.info_img {
+    margin-top: 1.5%;
+    margin-right: 2.5%;
+}
+
+.info {
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.info i {
+    min-width: 30px;
+    min-height: 30px;
+}
+
+.searchbar {
+    justify-content: center;
+}
+
+#logements {
+    flex-direction: column-reverse;
+    width: 100%;
+}
+
+.art_logement {
+    border-radius: 0%;
+    background-color: white;
+}
+
+.hebergement_title {
+    text-align: center;
+}
+
+.location_card {
+    min-width: 90%;
+    min-height: 150px;
+    margin-top: 3%;
+}
+
+.location_card i {
+    margin: 0%;
+}
+
+.afficherplus {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 100%;
+}
+
+.locationcard_body {
+    width: 70%;
+}
+
+.popularcard_body {
+    width: 70%;
+}
+
+.popularcard i {
+    margin: 0%;
+}
+
+.populaire {
+    flex-direction: column;
+    width: 100%;
+    margin: 0%;
+    border-radius: 0%;
+    margin-top: 5%;
+}
+
+#activité {
+    margin: 10px;
+}
+
+.activité_largecard_body,
+.activité_smallcard_body {
+    margin-top: 20px;
+}
+
+.activité_card {
+    flex-direction: column;
+}
+
+.activité_card a {
+    width: 100%;
+}
+
+.activité_card img {
+    height: 150px !important;
+    min-height: 150px;
+    width: 100%;
+}
+
+footer {
+    height: 600px;
+}
+
+.footer {
+    background-color: #F2F2F2;
+}
+
+.footer a {
+    margin-bottom: 5%;
+}
+
+.footer li {
+    padding: 0%;
+    margin: 0%;
+    margin-top: 3%;
+}
+
+.footer_global {
+    flex-direction: column;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+}
